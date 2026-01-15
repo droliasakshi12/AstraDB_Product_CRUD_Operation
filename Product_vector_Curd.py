@@ -5,10 +5,8 @@ import streamlit as st
 
 @st.cache_resource
 def init_db():
-    client = DataAPIClient(
-        token="AstraCS:rWSHEwBRNcRTONNXOzUoifXZ:2395eeccde459698c09dd06663a4f831535b465c730bf134414ee17ce195f773")
-    db = client.get_database_by_api_endpoint(
-        "https://fc8bc821-93ad-4b39-981c-1d2076930056-us-east1.apps.astra.datastax.com")
+    client = DataAPIClient(token="Your AstraDB Tokens")
+    db = client.get_database_by_api_endpoint("Your_AstraDB EndPoint")
     return db
 
 
@@ -226,3 +224,4 @@ if collection:
 
             else:
                 st.error("❌ No product found with that ID.")
+
