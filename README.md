@@ -61,7 +61,6 @@
 
 ## 🛠️ Installation
 ### **Clone this repository:**
-
    ```bash
    git clone https://github.com/droliasakshi12/AstraDB_Student_CRUD.git
 ```
@@ -69,7 +68,7 @@
 ``` bash
 cd AstraDB_Student_CRUD
 ```
-
+### ** Install depedencies **
 ``` bash
 pip install -r requirements.txt
 ```
